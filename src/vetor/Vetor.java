@@ -7,7 +7,15 @@ package vetor;
 public class Vetor {
 
     public static void main(String[] args) {
-        // TODO code application logic here
+        Vetor v = new Vetor(10);
+        Vetor v2 = new Vetor(5);
+    
+        
+    v.randomFill();
+    v2.randomFill();
+    v2 = v2.Concat(v);
+    v2.bubbleSort();
+    System.out.println(v2.toString());
     }
     
 }
